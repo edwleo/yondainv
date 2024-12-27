@@ -72,37 +72,5 @@
       </nav>
     </div>
     <div id="layoutSidenav_content">
+
       <main>
-        <div class="container-fluid px-4">
-          <h1 class="mt-4">Dashboard</h1>
-          <ol class="breadcrumb mb-4">
-            <li class="breadcrumb-item active">Dashboard</li>
-          </ol>
-          <div class="row">
-            
-          </div>
-        </div>
-      </main>
-
-      <footer class="py-4 bg-light mt-auto">
-        <div class="container-fluid px-4">
-          <div class="d-flex align-items-center justify-content-between small">
-            <div class="text-muted">Todos los derechos reservados &copy; 2024</div>
-            <div>
-              <a href="#">Yonda Perú</a>
-            </div>
-          </div>
-        </div>
-      </footer>
-
-    </div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-    crossorigin="anonymous"></script>
-  <script src="dist/js/scripts.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js"
-    crossorigin="anonymous"></script>
-</body>
-
-</html>

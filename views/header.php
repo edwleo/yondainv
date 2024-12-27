@@ -9,7 +9,7 @@
   <meta name="author" content="" />
   <title>Inversionistas</title>
   <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
-  <link href="dist/css/styles.css" rel="stylesheet" />
+  <link href="../dist/css/styles.css" rel="stylesheet" />
   <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
 </head>
 
@@ -50,16 +50,20 @@
         <div class="sb-sidenav-menu">
           <div class="nav">
             <div class="sb-sidenav-menu-heading">Dashboard</div>
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href="main.php">
               <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
               Inicio
             </a>
             <div class="sb-sidenav-menu-heading">Módulos</div>
-            <a class="nav-link" href="charts.html">
+            <a class="nav-link" href="inversionistas.php">
               <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
               Inversionistas
             </a>
-            <a class="nav-link" href="tables.html">
+            <a class="nav-link" href="contratos.php">
+              <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+              Contratos
+            </a>
+            <a class="nav-link" href="pagos.php">
               <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
               Pagos
             </a>

@@ -74,6 +74,7 @@ CREATE TABLE inversionistas
     direccion 			VARCHAR(100) NULL,
     email 				VARCHAR(100) NULL,
     idasesor 			INT 		NOT NULL,
+    condicion 			CHAR(5) 	NOT NULL, -- LEADS, INVER
 	created 			DATETIME 	NOT NULL DEFAULT NOW(),
     updated 			DATETIME 	NULL,
     disabled			DATETIME 	NULL,
@@ -82,6 +83,7 @@ CREATE TABLE inversionistas
     CONSTRAINT fk_idubigeo_inv FOREIGN KEY (idubigeo) REFERENCES ubigeoinei (idubigeo),
     CONSTRAINT fk_idasesor_inv FOREIGN KEY (idasesor) REFERENCES usuarios (idusuario)
 )ENGINE = INNODB;
+
 
 CREATE TABLE cuentas
 (
@@ -98,3 +100,16 @@ CREATE TABLE cuentas
     CONSTRAINT fk_identidad_cta FOREIGN KEY (identidad) REFERENCES entidades (identidad)
 )ENGINE = INNODB;
 
+CREATE TABLE contratos
+(
+	idcontrato 			INT AUTO_INCREMENT PRIMARY KEY,
+    fecharegistro		DATETIME 		NOT NULL DEFAULT NOW(),
+    fechainicio			DATE 			NOT NULL,
+    duracionmeses		SMALLINT 		NOT NULL,
+    capital 			DECIMAL(9,2) 	NOT NULL,
+    moneda 				CHAR(3) 		NOT NULL,
+    rentabilidad 		DECIMAL(5,2) 	NOT NULL,
+    diadeposito 		TINYINT 		NOT NULL,
+    tipocontrato 		CHAR(3)			NOT NULL, 
+    garantia 			CHAR(3) 		NOT NULL, -- LCA (letra de cambio), VEH (vehiculares), HPT (hipotecarias)
+)ENGINE = INNODB;
